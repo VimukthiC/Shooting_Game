@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet">
+    <title>Duck Hunter</title>
+</head>
+
+<body id="bodyId" onclick="sound()" onload="loading()">
+<div id="loading">Please wait</div>
+
+<audio id="sound" src="assests/12-Gauge-sound.mp3" preload="auto"></audio>
+
+
+<main id="start">
+    <div id="title">DUCK HUNTER</div>
+    <img src="assests/hunting-dog-silhouette-4.png" style="width: 622px;">
+    <button id="btnPlay" onclick="playShooting()">Play</button>
+</main>
+
+<main id="play">
+    <label id="label1" for="input1">Score : </label>
+    <input class="score" id="input1" value="0">
+
+    <div id="timeCount"></div>
+</main>
+
+<main id="playAgain">
+    <div id="playAgainCon">
+        <button class="playAgain" id="btnPlayAgain" onclick="playShooting()">Play Again</button>
+        <button class="playAgain" id="btnClose" >Close</button>
+        <button class="playAgain" id="btnLevel" onclick="playShooting()">Level Two</button>
+    </div>
+    <div>
+        <label id="label2" for="input2">Score : </label>
+        <input class="score2" id="input2">
+    </div>
+</main>
+<!--<main id="levelTwo">-->
+<!--<div id="playAgainCon">-->
+<!--    <button class="playAgain" id="btnPlayAgain" onclick="playShooting()">Play Again</button>-->
+<!--    <button class="playAgain" id="btnClose" >Close</button>-->
+<!--    <button class="playAgain" id="btnLevel" >Level Two</button>-->
+<!--</div>-->
+<!--<div>-->
+<!--    <label id="label2" for="input2">Score : </label>-->
+<!--    <input class="score2" id="input2">-->
+<!--</div>-->
+<!--</main>-->
+
+
+<script src="assests/jquery-3.5.1.min.js"></script>
+<!--<script crossorigin="anonymous"-->
+<!--integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"-->
+<!--src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+
+<script src="main.js" type="application/javascript"></script>
+
+</body>
+</html>
